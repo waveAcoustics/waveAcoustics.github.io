@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang='en' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>2. Basic Usage | Wave Acoustics</title>
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+<meta name="description"
+  content="Eureka is a elegant and powerful theme for Hugo.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Wave Acoustics Simulator - Official User Guide",
+      "item":"/documentation/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"2. Basic Usage",
+      "item":"/documentation/2.basics/"}]
+}
+</script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/documentation/2.basics/"
+    },
+    "headline": "2. Basic Usage | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
+    "dateModified": "2020-05-26T00:00:00+00:00",
+    "wordCount":  642 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "Eureka is a elegant and powerful theme for Hugo."
+}
+</script><meta property="og:title" content="2. Basic Usage | Wave Acoustics" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/documentation/2.basics/" />
+
+
+
+
+<meta property="og:description" content="" />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="Wave Acoustics" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2020-05-26T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2020-05-26T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="documentation" />
+
+
+
+
+<body class="flex flex-col min-h-screen">
+    <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+        <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">Wave Acoustics</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/documentation/"
+                class="block mt-4 md:inline-block md:mt-0  text-eureka  hover:text-eureka mr-4">Documentation</a>
+            <a href="/new_stuff/"
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">What&#39;s new?</a>
+            <a href="/pricing/"
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">Pricing</a>
+            <a href="/about/"
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">About</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script></div>
+    </header>
+    <main class="flex-grow pt-16">
+        <div class="pl-scrollbar">
+            <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">2. Basic Usage</h1>
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <h2 id="21-application-layout">2.1 Application layout</h2>
+<p>The next figure depicts the Wave Acoustics Simulator GUI (Graphical User Interface). It consists of
+four main regions:</p>
+<p><img src="/images/wave_on_windows2.png" alt="Win_Layout"></p>
+<ol>
+<li>
+<p>File menu - Here the user can quit the application, load a new simulation or check information about
+WaveAcoustics itself.</p>
+</li>
+<li>
+<p>Simulation options – The user can set the source and boundary characteristics, view data in real
+time using a virtual oscilloscope and change graphical and other simulation settings. Each option
+type is grouped into an expandable tab, listed below. These options are described in greater detail in the subsequent chapters of this documentation.</p>
+<p>• Source</p>
+<p>• Boundaries</p>
+<p>• Oscilloscope</p>
+<p>• View</p>
+<p>• Settings</p>
+</li>
+<li>
+<p>Main view - Show the graphical output of wave simulations.</p>
+</li>
+<li>
+<p>Simulation controls - Play/pause, reset and set snap grid on/off.</p>
+</li>
+</ol>
+<h2 id="22-how-to-setup-a-basic-simulation">2.2 How to setup a basic simulation</h2>
+<h3 id="221-input-source">2.2.1 Input Source</h3>
+<p><strong>Right-click</strong> on the main view to create by default a propagating sound pulse:</p>
+<p><img src="/images/simple_pulse.png" alt="Source"></p>
+<p>If you wish to input a different type of source, use the expandable ‘Source’ menu, in the simulation
+options.</p>
+<h3 id="222-input-boundaries">2.2.2 Input boundaries</h3>
+<p>Left-click on the main view. This will draw boundary lines:</p>
+<p><img src="/images/simple_boundary.png" alt="Boundary"></p>
+<p>Please note that whilst the boundary position has not been fixed by the user, the boundary will
+appear pink. Otherwise, it will appear white.</p>
+<p>The user must press the ‘ESC’ key in order to stop inputting more boundaries.</p>
+<h3 id="223-snap-grid-onoff">2.2.3 Snap grid on/off</h3>
+<p>You can toggle grid snapping by clicking the snap button in the simulation controls:</p>
+<p><img src="/images/simple_snap2.png" alt="Snap2"></p>
+<p>It is worth noting that when inserting boundaries (and while the grid mode is enabled) a tooltip appears next to the mouse cursor indicating the corresponding physical distance of the boundary.</p>
+<p><img src="/images/simple_dist.png" alt="Snap2"></p>
+<h3 id="224-selectdelete-boundaries">2.2.4 Select/Delete boundaries</h3>
+<p>The user is able to select boundaries by using SHIFT + RIGHT CLICK and dragging the mouse cursor over it. Selected boundaries will appear in yellow. The following figure shows two boundaries have been selected:</p>
+<p><img src="/images/simple_snap3.png" alt="Snap3"></p>
+<p>In order to unselect the boundaries, the user should press the &lsquo;ESC&rsquo; key.
+It is possible to delete selected boundaries by pressing the key &lsquo;DEL&rsquo; on the keyboard. The following figure shows the arrangement obtained by deleting the two previously selected boundaries:</p>
+<p><img src="/images/simple_snap4.png" alt="Snap4"></p>
+<h3 id="225-simulation-output">2.2.5 Simulation output</h3>
+<p>The following picture depicts the graphical output of the <strong>Wave Acoustics Simulator</strong>, where the user has defined a pulse and a set of boundaries:</p>
+<p><img src="/images/simple_sim2.png" alt="Sim"></p>
+<p>Note the two point responses (blue and red) visible in the ‘Oscilloscope’ tab. These responses are
+updated while the simulation is running. The corresponding receiver positions are set by clicking the
+middle mouse button in the main view area – first click sets the first receiver (green square), while the second
+click sets the second receiver (green circle). To reset these receiver positions press the &lsquo;R&rsquo; key.</p>
+<h3 id="226-save-data-for-post-processing">2.2.6 Save data for post-processing</h3>
+<p>The acoustic pressure data corresponding to the two receivers can be saved to disk by enabling ‘Save data to disk’. Then, once the option to save data in unchecked, the process of saving data is stopped and the receiver data is saved to a .csv file inside the &lsquo;data_output&rsquo; folder. The .csv file can be opened by 3rd party software such as a spreadsheet, MATLAB or Python. As an example, the following figure shows the data being opened using a spreadsheet:</p>
+<p><img src="/images/simple_spreadsheet2.png" alt="SimSheet"></p>
+<h3 id="227-reset-simulation">2.2.7 Reset simulation</h3>
+<p>To  reset to an entirely new simulation, click &lsquo;File -&gt; New&rsquo; in the file menu:</p>
+<p><img src="/images/simple_new.png" alt="Fnew"></p>
+<p>To reset only the sound field and source positions, click the reset button in the simulation controls:</p>
+<p><img src="/images/simple_reset.png" alt="Freset"></p>
+<p>To reset only the receiver data and positions, press the &lsquo;R&rsquo; key.</p>
+<h2 id="23-keyboard-shortcuts">2.3 Keyboard shortcuts</h2>
+<p>Several actions on <strong>WAS</strong> can be performed using the keyboard. The following lists them:</p>
+<ul>
+<li>
+<p>&lsquo;ESC&rsquo; - is used to finish entering boundaries, the boundaries become active and will appear white.</p>
+</li>
+<li>
+<p>&lsquo;ENTER&rsquo; - is used to close the boundaries.</p>
+</li>
+<li>
+<p>&lsquo;SPACE&rsquo; - Pause/Unpause the simulation</p>
+</li>
+<li>
+<p>&lsquo;DELETE&rsquo; - is used to remove selected boundaries from the simulation.</p>
+</li>
+<li>
+<p>&lsquo;R&rsquo; - Pressing the &lsquo;R&rsquo; key resets the receivers position and data.</p>
+</li>
+</ul>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+
+
+
+        
+    </div>
+    
+
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+            </div>
+        </div>
+        
+    </main>
+    <footer class="pl-scrollbar">
+        <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 Wave Acoustics &middot;  </p>
+</div>
+</div>
+    </footer>
+</body>
+
+</html>

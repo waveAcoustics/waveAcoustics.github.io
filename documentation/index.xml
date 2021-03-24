@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wave Acoustics Simulator - Official User Guide on Wave Acoustics</title>
+    <link>/documentation/</link>
+    <description>Recent content in Wave Acoustics Simulator - Official User Guide on Wave Acoustics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2021 Wave Acoustics</copyright>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Getting started</title>
+      <link>/documentation/1.getting-started/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/1.getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2. Basic Usage</title>
+      <link>/documentation/2.basics/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/2.basics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3. Source types</title>
+      <link>/documentation/3.source-types/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/3.source-types/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. Boundaries</title>
+      <link>/documentation/4.boundaries/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/4.boundaries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>5. Oscilloscope</title>
+      <link>/documentation/5.oscilloscope/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/5.oscilloscope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>6. Visualization options</title>
+      <link>/documentation/6.visualization/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/6.visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>7. Simulation settings</title>
+      <link>/documentation/7.-simulation-settings/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/7.-simulation-settings/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
