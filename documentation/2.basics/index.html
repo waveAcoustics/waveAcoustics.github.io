@@ -70,7 +70,7 @@
     },
     "headline": "2. Basic Usage | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
     "dateModified": "2020-05-26T00:00:00+00:00",
-    "wordCount":  642 ,
+    "wordCount":  951 ,
     "publisher": {
         "@type": "Person",
         "name": "C. Wang",
@@ -141,12 +141,12 @@
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
             <a href="/documentation/"
                 class="block mt-4 md:inline-block md:mt-0  text-eureka  hover:text-eureka mr-4">Documentation</a>
-            <a href="/new_stuff/"
-                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">What&#39;s new?</a>
             <a href="/pricing/"
                 class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">Pricing</a>
             <a href="/about/"
                 class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">About</a>
+            <a href="/faq/"
+                class="block mt-4 md:inline-block md:mt-0  hover:text-eureka mr-4">FAQ</a>
         </div>
 
         <div class="flex">
@@ -232,17 +232,23 @@ type is grouped into an expandable tab, listed below. These options are describe
 <p>• Settings</p>
 </li>
 <li>
-<p>Main view - Show the graphical output of wave simulations.</p>
+<p>Main view - Show the graphical output of wave simulations. By default, the elapsed time is shown in the bottom left corner. A &lsquo;W.A.S.&rsquo; watermark is displayed on the top right corner.
+This watermark is not displayed in the industrial version.</p>
 </li>
 <li>
-<p>Simulation controls - Play/pause, reset and set snap grid on/off.</p>
+<p>Simulation controls - Play/pause, reset, record animation and set snap grid on/off.</p>
 </li>
 </ol>
 <h2 id="22-how-to-setup-a-basic-simulation">2.2 How to setup a basic simulation</h2>
-<h3 id="221-input-source">2.2.1 Input Source</h3>
-<p><strong>Right-click</strong> on the main view to create by default a propagating sound pulse:</p>
+<h3 id="221-input-sources">2.2.1 Input Sources</h3>
+<p><strong>Right-click</strong> on the main view to create by default a sinusoidal source:</p>
 <p><img src="/images/simple_pulse.png" alt="Source"></p>
-<p>If you wish to input a different type of source, use the expandable ‘Source’ menu, in the simulation
+<p>Note that the source positions will be marked with light blue squares.
+You can then start the simulation or pause at any time by pressing the &lsquo;play/pause&rsquo; button down in the simulation controls:</p>
+<p><img src="/images/simple_play.png" alt="Fplay"></p>
+<p>Note that the source position markers disappear while the simulation is running:</p>
+<p><img src="/images/simple_pulse2.png" alt="Source"></p>
+<p>If you wish to edit the characteristics of your source or even input a different type of source, use the expandable ‘Source’ menu, in the simulation
 options.</p>
 <h3 id="222-input-boundaries">2.2.2 Input boundaries</h3>
 <p>Left-click on the main view. This will draw boundary lines:</p>
@@ -252,17 +258,19 @@ appear pink. Otherwise, it will appear white.</p>
 <p>The user must press the ‘ESC’ key in order to stop inputting more boundaries.</p>
 <h3 id="223-snap-grid-onoff">2.2.3 Snap grid on/off</h3>
 <p>You can toggle grid snapping by clicking the snap button in the simulation controls:</p>
+<p><img src="/images/simple_snap1.png" alt="Snap1"></p>
+<p>The snap button will turn red and the snap grid will be displayed:</p>
 <p><img src="/images/simple_snap2.png" alt="Snap2"></p>
 <p>It is worth noting that when inserting boundaries (and while the grid mode is enabled) a tooltip appears next to the mouse cursor indicating the corresponding physical distance of the boundary.</p>
 <p><img src="/images/simple_dist.png" alt="Snap2"></p>
 <h3 id="224-selectdelete-boundaries">2.2.4 Select/Delete boundaries</h3>
-<p>The user is able to select boundaries by using SHIFT + RIGHT CLICK and dragging the mouse cursor over it. Selected boundaries will appear in yellow. The following figure shows two boundaries have been selected:</p>
+<p>The user is able to select boundaries by using SHIFT + RIGHT CLICK and dragging the mouse cursor over it. This will show the selection rectangle which appears in an orange colour. Selected boundaries will appear in yellow. The following figure shows two boundaries have been selected:</p>
 <p><img src="/images/simple_snap3.png" alt="Snap3"></p>
 <p>In order to unselect the boundaries, the user should press the &lsquo;ESC&rsquo; key.
-It is possible to delete selected boundaries by pressing the key &lsquo;DEL&rsquo; on the keyboard. The following figure shows the arrangement obtained by deleting the two previously selected boundaries:</p>
+It is possible to delete selected boundaries by pressing the key &lsquo;DELETE&rsquo; on the keyboard. The following figure shows the arrangement obtained by deleting the two previously selected boundaries:</p>
 <p><img src="/images/simple_snap4.png" alt="Snap4"></p>
 <h3 id="225-simulation-output">2.2.5 Simulation output</h3>
-<p>The following picture depicts the graphical output of the <strong>Wave Acoustics Simulator</strong>, where the user has defined a pulse and a set of boundaries:</p>
+<p>The following picture depicts the graphical output of the <strong>Wave Acoustics Simulator</strong>, where the user has defined a sound source, two receiver positions and a set of boundaries:</p>
 <p><img src="/images/simple_sim2.png" alt="Sim"></p>
 <p>Note the two point responses (blue and red) visible in the ‘Oscilloscope’ tab. These responses are
 updated while the simulation is running. The corresponding receiver positions are set by clicking the
@@ -277,6 +285,21 @@ click sets the second receiver (green circle). To reset these receiver positions
 <p>To reset only the sound field and source positions, click the reset button in the simulation controls:</p>
 <p><img src="/images/simple_reset.png" alt="Freset"></p>
 <p>To reset only the receiver data and positions, press the &lsquo;R&rsquo; key.</p>
+<h3 id="228-record-animation">2.2.8 Record animation</h3>
+<p>Wave Acoustics Simulator offers a way to record an animation of the simulations.</p>
+<p>To create an animation, set up your sources and boundaries and then press the
+&lsquo;rec&rsquo; button on the simulation controls:</p>
+<p><img src="/images/simple_rec.png" alt="Frec"></p>
+<p>This will trigger the simulation to start playing. The &lsquo;rec&rsquo; button will turn red while the recording is ongoing:</p>
+<p><img src="/images/simple_rec2.png" alt="Frec"></p>
+<p>To stop the recording simply click the &lsquo;rec&rsquo; button again. This will make the button restore its original white colour and will automatically create the animation
+files inside the &lsquo;data_output&rsquo; folder.</p>
+<p>The animation output consists of an animation file (.gif). The creation of these files typically takes a few seconds to complete. On Windows 10, an empty command line will show up while the animation file is being created:</p>
+<p><img src="/images/simple_exe.png" alt="Fexe"></p>
+<p>Once the file creation process is finished, the command line window will disappear and the .gif file is ready to be opened. In addition to the command line window, a file &lsquo;status_animation.txt&rsquo; is also created (also inside the &lsquo;data_output&rsquo; folder), indicating that the animation file was successfully created and is ready to be opened by a suitable player (like Firefox):</p>
+<p><img src="/images/simple_file.png" alt="Fexe"></p>
+<p>The animation file obtained in our test simulation is shown here:</p>
+<p><img src="/images/animation2.gif" alt="Fani"></p>
 <h2 id="23-keyboard-shortcuts">2.3 Keyboard shortcuts</h2>
 <p>Several actions on <strong>WAS</strong> can be performed using the keyboard. The following lists them:</p>
 <ul>

@@ -83,14 +83,16 @@ Whether you are an educator, architect or consultant, please register take a loo
     </item>
     
     <item>
-      <title>First public release!</title>
-      <link>/new_stuff/</link>
+      <title>Frequently Asked Questions</title>
+      <link>/faq/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/new_stuff/</guid>
-      <description>Wave Acoustics Simulator 1.15 has been released! (24-Mar-2021) It&amp;rsquo;s out there and it&amp;rsquo;s available for purchase - the current version number is 1.15.
-The following shows a brief showcase of the main features of Wave Acoustics Simulator:
- Calculates sound fields in the time domain, which allows for great visualization    Easy drawing/editing of model geometry    Can use a variety of sound pressure sources such as the sinusoidal, pulse or noise source    Import .</description>
+      <guid>/faq/</guid>
+      <description>I cannot start my simulation! Currently tablets and handheld devices are not supported. Please check out chapter 2 &amp;ldquo;Basic usage&amp;rdquo; of the documentation.
+
+No animation file was created. Why? Please check out section 2.2.8 of the documentation - it typically takes a few seconds for the animation file to be ready. If the file still isn&amp;rsquo;t visible, it may be worth refreshing the file manager.
+
+How do I measure distances in W.A.S.? Turn the snap grid on (using the simulation controls below the main view) and trace a line.</description>
     </item>
     
     <item>
@@ -108,8 +110,9 @@ The following shows a brief showcase of the main features of Wave Acoustics Simu
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>About the Wave Acoustics Simulator The Wave Acoustics Simulator is a leading 2D simulation tool that focus on visualization and rapid prototyping. It is designed to bring acoustics to architects, planners, educators and students alike.
-About the author Dr. Nuno Ferreira graduated from the University of Salford with a MSc Environmental Acoustics. He later obtained his PhD from the University of Liverpool in Numerical Vibroacoustics. He then moved to Portugal and has been working as a software engineer since.</description>
+      <description>About the Wave Acoustics Simulator The Wave Acoustics Simulator, a.k.a. W.A.S., is a leading 2D simulation tool that focus on visualization and rapid prototyping. It is designed to bring acoustics to architects, planners, educators and students alike.
+The following shows a brief showcase of the main features of the Wave Acoustics Simulator:
+ Visualization of sound pressure field and point responses, particle velocity and RMS time average fields    Easy drawing/editing of model geometry    Can use a variety of sound pressure sources such as the sinusoidal, pulse or noise source    Import .</description>
     </item>
     
     <item>
