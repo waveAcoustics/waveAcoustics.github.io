@@ -70,7 +70,7 @@
     },
     "headline": "2. Basic Usage | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
     "dateModified": "2020-05-26T00:00:00+00:00",
-    "wordCount":  951 ,
+    "wordCount":  982 ,
     "publisher": {
         "@type": "Person",
         "name": "C. Wang",
@@ -222,7 +222,7 @@ four main regions:</p>
 WaveAcoustics itself.</p>
 </li>
 <li>
-<p>Simulation options – The user can set the source and boundary characteristics, view data in real
+<p>Simulation option tabs – The user can set the source and boundary characteristics, view data in real
 time using a virtual oscilloscope and change graphical and other simulation settings. Each option
 type is grouped into an expandable tab, listed below. These options are described in greater detail in the subsequent chapters of this documentation.</p>
 <p>• Source</p>
@@ -232,7 +232,7 @@ type is grouped into an expandable tab, listed below. These options are describe
 <p>• Settings</p>
 </li>
 <li>
-<p>Main view - Show the graphical output of wave simulations. By default, the elapsed time is shown in the bottom left corner. A &lsquo;W.A.S.&rsquo; watermark is displayed on the top right corner.
+<p>Main view - Shows the graphical output of wave simulations. By default, the elapsed time is shown in the bottom left corner. A &lsquo;W.A.S.&rsquo; watermark is displayed on the top right corner.
 This watermark is not displayed in the industrial version.</p>
 </li>
 <li>
@@ -241,64 +241,77 @@ This watermark is not displayed in the industrial version.</p>
 </ol>
 <h2 id="22-how-to-setup-a-basic-simulation">2.2 How to setup a basic simulation</h2>
 <h3 id="221-input-sources">2.2.1 Input Sources</h3>
-<p><strong>Right-click</strong> on the main view to create by default a sinusoidal source:</p>
+<p><strong>Right-click</strong> on the main view to create a sinusoidal source (default source):</p>
 <p><img src="/images/simple_pulse.png" alt="Source"></p>
 <p>Note that the source positions will be marked with light blue squares.
-You can then start the simulation or pause at any time by pressing the &lsquo;play/pause&rsquo; button down in the simulation controls:</p>
+You can then start the simulation or pause it at any time by pressing the &lsquo;play/pause&rsquo; button down in the simulation controls:</p>
 <p><img src="/images/simple_play.png" alt="Fplay"></p>
 <p>Note that the source position markers disappear while the simulation is running:</p>
 <p><img src="/images/simple_pulse2.png" alt="Source"></p>
 <p>If you wish to edit the characteristics of your source or even input a different type of source, use the expandable ‘Source’ menu, in the simulation
-options.</p>
+option tabs.</p>
 <h3 id="222-input-boundaries">2.2.2 Input boundaries</h3>
-<p>Left-click on the main view. This will draw boundary lines:</p>
+<p>Left-click on the main view. This will enter boundary insertion mode:</p>
 <p><img src="/images/simple_boundary.png" alt="Boundary"></p>
 <p>Please note that whilst the boundary position has not been fixed by the user, the boundary will
 appear pink. Otherwise, it will appear white.</p>
-<p>The user must press the ‘ESC’ key in order to stop inputting more boundaries.</p>
+<p>The user must press the ‘ESC’ key in order to exit boundary insertion mode.</p>
 <h3 id="223-snap-grid-onoff">2.2.3 Snap grid on/off</h3>
-<p>You can toggle grid snapping by clicking the snap button in the simulation controls:</p>
+<p>You can toggle the snap grid on/off by clicking the snap button in the simulation controls:</p>
 <p><img src="/images/simple_snap1.png" alt="Snap1"></p>
 <p>The snap button will turn red and the snap grid will be displayed:</p>
 <p><img src="/images/simple_snap2.png" alt="Snap2"></p>
-<p>It is worth noting that when inserting boundaries (and while the grid mode is enabled) a tooltip appears next to the mouse cursor indicating the corresponding physical distance of the boundary.</p>
+<p>It is worth noting that whilst inserting boundaries (and while the snap grid is enabled) a tooltip appears next to the mouse cursor indicating the corresponding physical distance of the boundary.</p>
 <p><img src="/images/simple_dist.png" alt="Snap2"></p>
 <h3 id="224-selectdelete-boundaries">2.2.4 Select/Delete boundaries</h3>
-<p>The user is able to select boundaries by using SHIFT + RIGHT CLICK and dragging the mouse cursor over it. This will show the selection rectangle which appears in an orange colour. Selected boundaries will appear in yellow. The following figure shows two boundaries have been selected:</p>
+<div style="text-align: justify"> 
+The user is able to select boundaries by using SHIFT + RIGHT CLICK and dragging the mouse cursor over it. This will show the selection rectangle which will appear in an orange colour. Selected boundaries will appear in yellow. The following figure shows two boundaries that have been selected:
+</div>
 <p><img src="/images/simple_snap3.png" alt="Snap3"></p>
-<p>In order to unselect the boundaries, the user should press the &lsquo;ESC&rsquo; key.
-It is possible to delete selected boundaries by pressing the key &lsquo;DELETE&rsquo; on the keyboard. The following figure shows the arrangement obtained by deleting the two previously selected boundaries:</p>
+<div style="text-align: justify"> 
+In order to unselect these boundaries, the user should press the 'ESC' key.
+It is possible to delete selected boundaries by pressing the key 'DELETE' on the keyboard. The following figure shows the arrangement obtained by deleting the two previously selected boundaries:
+</div>
 <p><img src="/images/simple_snap4.png" alt="Snap4"></p>
 <h3 id="225-simulation-output">2.2.5 Simulation output</h3>
-<p>The following picture depicts the graphical output of the <strong>Wave Acoustics Simulator</strong>, where the user has defined a sound source, two receiver positions and a set of boundaries:</p>
+<p>The following picture depicts the graphical output of the <strong>Wave Acoustics Simulator</strong>, where the user defined a sound source, two receiver positions and a set of boundaries:</p>
 <p><img src="/images/simple_sim2.png" alt="Sim"></p>
 <div style="text-align: justify"> 
 Note the two point responses (blue and red) visible in the ‘Oscilloscope’ tab. These responses are
 updated while the simulation is running. The corresponding receiver positions are set by clicking the
-middle mouse button in the main view area – first click sets the first receiver (green square), while the second
+middle mouse button in the main view area – the first click sets the first receiver (green square), while the second
 click sets the second receiver (green circle). To reset these receiver positions press the 'R' key.
 </div>
 <h3 id="226-save-data-for-post-processing">2.2.6 Save data for post-processing</h3>
 <div style="text-align: justify"> 
-The acoustic pressure data corresponding to the two receivers can be saved to disk by enabling ‘Save data to disk’. While this option is checked, data is streamed onto the 'data.csv 'file inside the 'data_output' folder. The 'data.csv' file can be opened by 3rd party software such as a spreadsheet, MATLAB or Python. The file 'data.csv' should not be opened while data is being streamed onto it. As an example, the following figure shows the data being opened using a spreadsheet:
+The acoustic pressure data corresponding to the two receivers can be saved to disk by enabling ‘Save data to disk’. While this option is checked, data is streamed into the 'data.csv 'file inside the 'data_output' folder. The resulting  file 'data.csv' can then be opened by 3rd party software such as a spreadsheet, MATLAB or Python. As an example, the following figure shows the data being opened using a spreadsheet:
 </div>
 <p><img src="/images/simple_spreadsheet2.png" alt="SimSheet"></p>
+<p>The user should not attempt to open the file &lsquo;data.csv&rsquo; while data is being streamed into it.</p>
 <h3 id="227-reset-simulation">2.2.7 Reset simulation</h3>
 <p>To  reset to an entirely new simulation, click &lsquo;File -&gt; New&rsquo; in the file menu:</p>
 <p><img src="/images/simple_new.png" alt="Fnew"></p>
-<p>To reset only the sound field and source positions, click the reset button in the simulation controls:</p>
+<div style="text-align: justify"> 
+To reset everything (sound field, receivers and source positions) except the boundaries, click the reset button in the simulation controls:
+</div>
 <p><img src="/images/simple_reset.png" alt="Freset"></p>
 <p>To reset only the receiver data and positions, press the &lsquo;R&rsquo; key.</p>
 <h3 id="228-record-animation">2.2.8 Record animation</h3>
 <p>Wave Acoustics Simulator offers a way to record an animation of the simulations.</p>
-<p>To create an animation, set up your sources and boundaries and then press the
-&lsquo;rec&rsquo; button on the simulation controls:</p>
+<div style="text-align: justify"> 
+To create an animation, set up your sources and boundaries and then press the 
+'rec' button down in the simulation controls:
+</div>
 <p><img src="/images/simple_rec.png" alt="Frec"></p>
 <p>This will trigger the simulation to start playing. The &lsquo;rec&rsquo; button will turn red while the recording is ongoing:</p>
 <p><img src="/images/simple_rec2.png" alt="Frec"></p>
-<p>To stop the recording simply click the &lsquo;rec&rsquo; button again. This will make the button restore its original white colour and will automatically create the animation
-files inside the &lsquo;data_output&rsquo; folder.</p>
-<p>The animation output consists of an animation file (.gif). The creation of these files typically takes a few seconds to complete. On Windows 10, an empty command line will show up while the animation file is being created:</p>
+<div style="text-align: justify"> 
+To stop the recording simply click the 'rec' button again. This will make the button restore its original white colour and will automatically create the animation
+file inside the 'data_output' folder. 
+</div>
+<div style="text-align: justify"> 
+The animation output consists of an a file with the .gif extension. The creation of this file typically takes a few seconds to complete. On Windows 10, an empty command line will show up while the animation file is being created:
+</div>
 <p><img src="/images/simple_exe.png" alt="Fexe"></p>
 <div style="text-align: justify"> 
  Once the file creation process is finished, the command line window will disappear and the .gif file is ready to be opened. In addition to the command line window, a file 'status_animation.txt' is also created (also inside the 'data_output' folder), indicating that the animation file was successfully created and is ready to be opened by a suitable player (like Firefox):
@@ -307,23 +320,26 @@ files inside the &lsquo;data_output&rsquo; folder.</p>
 <p>The animation file obtained in our test simulation is shown here:</p>
 <p><img src="/images/animation2.gif" alt="Fani"></p>
 <h2 id="23-keyboard-shortcuts">2.3 Keyboard shortcuts</h2>
-<p>Several actions on <strong>WAS</strong> can be performed using the keyboard. The following lists them:</p>
+<p>Several actions on <strong>WAS</strong> can be performed using the keyboard, as indicated in the following list:</p>
+<p><br /></p>
 <ul>
-<li>
-<p>&lsquo;ESC&rsquo; - is used to finish entering boundaries, the boundaries become active and will appear white.</p>
-</li>
-<li>
-<p>&lsquo;ENTER&rsquo; - is used to close the boundaries.</p>
-</li>
-<li>
-<p>&lsquo;SPACE&rsquo; - Pause/Unpause the simulation</p>
-</li>
-<li>
-<p>&lsquo;DELETE&rsquo; - is used to remove selected boundaries from the simulation.</p>
-</li>
-<li>
-<p>&lsquo;R&rsquo; - Pressing the &lsquo;R&rsquo; key resets the receivers position and data.</p>
-</li>
+<li>&lsquo;ESC&rsquo; - is used to finish entering boundaries, which become active and will appear white.</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>&lsquo;ENTER&rsquo; - is used to automatically close the boundaries to their starting point (while in boundary insertion mode).</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>&lsquo;SPACE&rsquo; - Pause/Unpause the simulation</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>&lsquo;DELETE&rsquo; - is used to remove selected boundaries from the simulation.</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>&lsquo;R&rsquo; - Pressing the &lsquo;R&rsquo; key resets the receivers position and data.</li>
 </ul>
         </div>
         

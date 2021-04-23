@@ -70,7 +70,7 @@
     },
     "headline": "4. Boundaries | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
     "dateModified": "2020-05-26T00:00:00+00:00",
-    "wordCount":  349 ,
+    "wordCount":  352 ,
     "publisher": {
         "@type": "Person",
         "name": "C. Wang",
@@ -213,34 +213,34 @@
 
         <div class="content">
             <p><img src="/images/bound_tab.png" alt="bound_tab">
-The boundaries tab allows the user to:</p>
+The &lsquo;Boundaries&rsquo; tab allows the user to:</p>
 <h2 id="41-import-geometry">4.1 Import geometry</h2>
 <p><img src="/images/bound_load.png" alt="bound_load"></p>
 <p>This options loads the CAD geometry contained in the file <strong>geom.dxf</strong>.</p>
 <div style="text-align: justify"> 
-As of <b>WAS</b> version 1.x, the .dxf geometry needs to be written to <b>geom.dxf</b> in order to be imported. <b>geom.dxf</b> comes with a default simple drawing, which is used to provide some sense of scale. Ideally, the user should edit the file <b>geom.dxf</b> using a CAD application, making sure the scale of the drawing matches the one used in the example. In order to succeed, the file  <b>geom.dxf</b> must contain only lines. This means that any drawing entities (polyline, circles, rectangles) that are not lines will be ignored.
+Currently, the .dxf geometry needs to be written to <b>geom.dxf</b> in order to be imported. <b>geom.dxf</b> contains a default simple drawing, which should be used to provide some sense of scale. The user should edit the file <b>geom.dxf</b> using a CAD application, making sure the scale of the drawing matches the one used in the example file provided. To successfully import the geometry, the file  <b>geom.dxf</b> must contain only lines. This means that any drawing entities (polyline, circles, rectangles) that are not lines will be ignored.
 </div>
 <p>The following figure shows an example of a geometry imported using the .dxf importer:</p>
 <p><img src="/images/bound_dxf.png" alt="bound_dxf"></p>
 <h2 id="42-add-circularelliptic-boundaries">4.2 Add circular/elliptic boundaries</h2>
 <p><img src="/images/bound_circle.png" alt="bound_circle"></p>
-<p>This menu lets the user add a circular boundary to the simulation. The user can choose the radius in the x- and y-directions (in meters), in the eccentricity menu.</p>
+<p>This menu lets the user add a circular boundary to the simulation. The user can choose the radius in the x- and y-directions (in meters), using the eccentricity menu:</p>
 <p><img src="/images/bound_eccen.png" alt="bound_eccen"></p>
-<p>Setting a dirrent value for the radius in x and y-directions will naturaly result in a ellipse.</p>
-<p>The &lsquo;Scale&rsquo; value scales the aforementioned x- and y- radius by an adimensional factor.</p>
+<p>Setting a different value for the radius in x and y-directions will naturaly result in a ellipse.</p>
+<p>The &lsquo;Scale&rsquo; value scales the aforementioned x- and y- radii by an adimensional factor.</p>
 <p>The following figure depicts an array of circles difracting some incident sound pulse.</p>
 <p><img src="/images/bound_circles.png" alt="bound_circles"></p>
 <h2 id="43-set-boundary-absorption-coefficient">4.3 Set boundary absorption coefficient</h2>
 <p><img src="/images/bound_alfa.png" alt="bound_alfa"></p>
 <p>This option sets the absorption coefficient of boundary conditions. It is based on an algorithm described by Yokota et al[1] and Suzuki et al[2].</p>
 <div style="text-align: justify"> 
-In order to set the absorption coefficient of a boundary(s) to a given value, the user must first select them and then click 'set alpha'. By default, the alpha assigned is zero. This corresponds to a perfetcly rigid boundary, where all the incident sound is reflected and none of it is transmitted.
+In order to set the absorption coefficient of a boundary(s) to a given value, the user must first select them and then click 'set alpha'. By default, the assigned value of alpha is zero. This corresponds to a perfetcly rigid boundary, where all the incident sound is reflected and none of it is transmitted.
 </div>
 <div style="text-align: justify"> 
 When the absoption coefficient of a boundary is set to be larger than zero, the boundary will transmit as well as reflect some of the sound incident upon it. This phenomenum is depicted in the next figure, where the external boundaries were set to rigid and the internal boundaries' alpha was set to 0.3:
 </div>
 <p><img src="/images/bound_alfa2.png" alt="bound_alfa2"></p>
-<p>Note how rigid boundaries are white, whilst non-rigid boundaries are shaded in light blue.</p>
+<p>It is worth noting how rigid boundaries are white, whilst non-rigid boundaries are shaded in light blue.</p>
         </div>
         
         

@@ -70,7 +70,7 @@
     },
     "headline": "3. Source types | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
     "dateModified": "2020-05-26T00:00:00+00:00",
-    "wordCount":  181 ,
+    "wordCount":  177 ,
     "publisher": {
         "@type": "Person",
         "name": "C. Wang",
@@ -216,23 +216,25 @@
 <p>There are several types of acoustic pressure sources that can be set in a simulation:</p>
 <h2 id="31-pulse">3.1 Pulse</h2>
 <div style="text-align: justify"> 
-The pulse type consists of a soft pressure wavelet that approximates the derivative of the Gaussian pulse [Schneider transparent sources]. The Amplitude (Pa) and witdh (ms) can be adjusted using the corresponding source dialog:
+The pulse type consists of a soft pressure wavelet that approximates the derivative of the Gaussian pulse. The corresponding amplitude (Pa) and witdh (ms) can be adjusted using the corresponding source dialog:
 </div>
 <p><img src="/images/source_pulse.png" alt="source_pulse"></p>
 <h2 id="32-sine">3.2 Sine</h2>
 <div style="text-align: justify"> 
-The 'sine' type consists of a hard pressure sinusoidal source [Schneider transparent sources]. The amplitude (Pa), frequency (Hz) and phase (rad) of the sinusoid can be adjusted using the following source dialog:
+The 'sine' type consists of a hard pressure sinusoidal source. The amplitude (Pa), frequency (Hz) and phase (rad) of the sinusoid can be adjusted using the following source dialog:
 </div>
 <p><img src="/images/source_sine.png" alt="source_sine"></p>
 <h2 id="33-noise">3.3 Noise</h2>
-<p>This source type consists of a hard pressure which outputs radom noise samples in the interval [-Amplitude, Amplitude].</p>
+<div style="text-align: justify"> 
+This type consists of a hard pressure source which outputs radom noise samples in the interval [-Amplitude, Amplitude]. 
+</div>
 <p>The amplitude of the noise source can be adjusted using the corresponding source dialog:</p>
 <p><img src="/images/source_noise.png" alt="source_noise"></p>
 <h2 id="radiation-patterns">Radiation patterns</h2>
 <div style="text-align: justify"> 
-It is worth noting that, while there is only direct support for omnidirectional raddiation pattern, in principle it is possible 
+It is worth noting that, while there is only direct support for omnidirectional raddiation patterns, in principle it is possible 
 to build more complex radiation patterns using a number of monopole sources with appropriate phase relations amongst them. 
-For example, if a dipole source is desired, the user needs to add two point source closely spaced and with opposite phases:
+For example, if a dipole source is desired, the user simply needs to insert two point sources closely spaced and with opposite phases:
 </div>
 <p><img src="/images/source_dipole.png" alt="source_dipole"></p>
         </div>
