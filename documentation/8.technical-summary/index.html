@@ -70,7 +70,7 @@
     },
     "headline": "8. Technical summary | Wave Acoustics","datePublished": "2020-05-26T00:00:00+00:00",
     "dateModified": "2020-05-26T00:00:00+00:00",
-    "wordCount":  494 ,
+    "wordCount":  485 ,
     "publisher": {
         "@type": "Person",
         "name": "C. Wang",
@@ -213,8 +213,8 @@
 
         <div class="content">
             <div style="text-align: justify"> 
-This section indicates which numerical techniques were used to build the Wave Acoustics Simulator. In order to direct the user to 
-appropriate literature sources, links and suggestions for further reading are also provided. 
+This section indicates which numerical techniques were used to build the Wave Acoustics Simulator. 
+<p>Links and suggestions for further reading are also provided.</p>
 </div>
 <p><br /></p>
 <h2 id="the-simulation-engine">The simulation engine</h2>
@@ -232,7 +232,7 @@ In order to allow waves to escape the computational domain with negligable refle
 <p><br /></p>
 <h2 id="boundaries">Boundaries</h2>
 <div style="text-align: justify"> 
-The simulation boundaries are implemented according to the method described by <a href="https://www.jstage.jst.go.jp/article/ast/28/1/28_1_16/_article">Suzuki et al. (2007)</a>, in which the physical properties (density and speed of sound) of the medium change in the boundaries region, to yield a particular value of sound absorption coefficient. The sound absorption coefficient is referred to in the program as 'Alpha'.
+The simulation boundaries are implemented according to the method described by <a href="https://www.jstage.jst.go.jp/article/ast/28/1/28_1_16/_article">Suzuki et al. (2007)</a>, in which the physical properties (density and speed of sound) of the medium change in the boundaries region, to yield a particular value of sound absorption coefficient. The sound absorption coefficient can be set by the user in 'Boundaries->Set alpha'.
 </div>
 <p><br /></p>
 <h2 id="sound-sources">Sound sources</h2>
@@ -249,7 +249,7 @@ In order to ensure stability of the simulations, space and time resolutions must
 <div>
 \[ \Delta t = \frac{\Delta h}{c \sqrt 2} \]
 </div>
-<p>where c is the highest phase velocity of wave motion propagation (set to 343 m/s in W.A.S) and $\Delta h$ is the spatial resolution (size of a grid cell), which can be set by the user in &ldquo;Settings-&gt;Resolution&rdquo;. For further information about the Courant condition, the user is suggested to read <a href="https://books.google.pt/books?hl=pt-PT&lr=&id=00on9fRvJqIC&oi=fnd&pg=PP15&dq=Kunz+Finite+Difference+Time+Domain+Method+for+Electromagnetics&ots=A7ib2JA2hA&sig=e75EMQhVX5Q2xo1cPezhi9-yCmk&redir_esc=y#v=onepage&q=Kunz%20Finite%20Difference%20Time%20Domain%20Method%20for%20Electromagnetics&f=false">Kunz (1993)</a>.</p>
+<p>where c is the highest phase velocity of wave motion propagation (set to 343 m/s in W.A.S) and $\Delta h$ is the spatial resolution (size of a grid cell), which can be set by the user in &lsquo;Settings-&gt;Resolution&rsquo;. For further information about the Courant condition, the user is suggested to read <a href="https://books.google.pt/books?hl=pt-PT&lr=&id=00on9fRvJqIC&oi=fnd&pg=PP15&dq=Kunz+Finite+Difference+Time+Domain+Method+for+Electromagnetics&ots=A7ib2JA2hA&sig=e75EMQhVX5Q2xo1cPezhi9-yCmk&redir_esc=y#v=onepage&q=Kunz%20Finite%20Difference%20Time%20Domain%20Method%20for%20Electromagnetics&f=false">Kunz (1993)</a>.</p>
 </div>
 <p><br /></p>
 <h2 id="rms-time-average">RMS time average</h2>
