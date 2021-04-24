@@ -72,6 +72,15 @@
     </item>
     
     <item>
+      <title>8. Technical summary</title>
+      <link>/documentation/8.technical-summary/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/documentation/8.technical-summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Acoustic wave simulations</title>
       <link>/features/math-support/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
@@ -89,8 +98,7 @@ Whether you are an educator, architect or consultant, please register take a loo
       
       <guid>/faq/</guid>
       <description>I cannot start my simulation! Currently tablets and handheld devices are not supported. Please check out chapter 2 &#34;Basic usage&#34; of the documentation.  
-No animation file was created. Why? Please check out section 2.2.8 of the documentation - it typically takes a few seconds for the animation file to be ready. If the file still isn&#39;t visible, it may be worth refreshing the file manager.  
-How do I measure distances in W.</description>
+Is W.A.S. capable of 3D simulations? W.A.S. was created specifically to aid primarily in acoustics visualization and rapid prototyping. Therefore speed is a must. As it turns out, 3D simulations are inherently much slower than 2D ones, because of the increased number of calculation points. Hence, there is no intention from the W.</description>
     </item>
     
     <item>
